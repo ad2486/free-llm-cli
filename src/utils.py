@@ -54,6 +54,16 @@ def handle_command(input):
         console.print("[red]Thanks for using llm-terminal![/red]")
         sys.exit()
 
+    elif s_input[0] == "/help":
+        console.print("[blue]Available commands:[/blue]")
+        console.print("[yellow]- /model\n-> Helps the user change the models")
+        console.print("[yellow]- /system\n-> Changes the system prompt")
+        console.print("[yellow]- /clear\n-> Clears the conversations")
+        console.print("[yellow]- /clearjson\n-> Clears the conversations.json")
+        console.print("[yellow]- /exit\n-> Exit")
+        console.print("[yellow]- /save\n-> Saves the conversations in the conversations.json file[/yellow]")
+        return True
+
     else:
         return False
 

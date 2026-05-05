@@ -9,7 +9,7 @@ console = Console(force_terminal=True)
 
 while True:
     try:
-        user_input = console.input("[bold green]>[/bold green] ")
+        user_input = console.input(f"[blue]\\[{config.current_model}][/blue][bold green] >[/bold green] ")
         if utils.handle_command(user_input):
             pass
         else:
